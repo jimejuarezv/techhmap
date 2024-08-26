@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechMap</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <header>
+        <h1>TechMap</h1>
+    </header>
+    <div class="main-container">
+        <aside class="sidebar">
+            <h2>FILTROS</h2>
+            <ul>
+                <li onclick="showComponents('ranuras')">Ranuras</li>
+                <li onclick="showComponents('puertos')">Puertos</li>
+                <li onclick="showComponents('alimentacion')">Alimentación</li>
+                <li onclick="showComponents('disipadores')">Disipadores</li>
+                <li onclick="showComponents('chips')">Chips</li>
+            </ul>
+        </aside>
+        <main class="content">
+            <div class="image-container">
+                <img id="motherboard-image" src="https://definicion.de/wp-content/uploads/2009/04/tarjeta-madre.jpg" alt="Placa Madre" usemap="#mapa">
+                <div id="button-container"></div>
+            </div>
+            <div id="definition" class="definition hidden">
+                <h2 id="definition-title">Título</h2>
+                <p id="definition-text">Haz clic en una parte de la placa para ver la definición.</p>
+                <button id="download-button" class="hidden">Descargar Definición</button>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
